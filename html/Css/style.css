@@ -1,8 +1,9 @@
-body {
+.boody{
     background-color: #131212;
     color: #39ff14;
     font-family: "MyFont";
     font-size: 20px;
+
 }
 
 
@@ -11,24 +12,23 @@ body {
     src: url(Font/Bitwise-m19x.ttf);
 }
 
-
-.input:focus {
-    outline: none;
-    border:1px solid #131212;
-    box-shadow: 0 0 10px #131212;
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*customize to your needs 100%*/
+    margin-top: 20vh; /*customize to your needs 100%*/
+}
+.centered img{
+  max-width:100%;
+  max-height:100%;
+}
+.centered span{
+    margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-
-.Term{
-    
-    background-color: #131212;
-    color: #39ff14;
-    font-family: "MyFont";
-    font-size: 20px;
-    border: 1px solid #131212;
-    border-radius: 15px;
-    
-}
 
 .ascii{
     font-size: 13px;
@@ -36,3 +36,48 @@ body {
 .asciiTitle{
     font-size: 8px;
 }
+
+.container{
+    height: 20px;
+    width: 50vw;
+    background-color: #131212;
+    position: relative;
+    transform: translateX(50%);
+    border: #39ff14;
+    border-radius: 15px;
+    
+}
+
+.container .progressBar {
+    position: absolute;
+    height: 100%;
+    background-color: #39ff14;
+    border: #39ff14;
+    border-radius: 15px;
+}
+
+#playAnimation {
+    animation: progressAnim 7s forwards cubic-bezier(0.55, 0.06, 0.68, 0.19);
+}
+
+@keyframes progressAnim {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* .glitch{
+    font-family: "MyFont";
+    font-size: 20px;
+    
+
+    text-shadow: 
+        0.05em 0 0 rgba(255, 170, 255, .75),
+        -0.025em -0.05em 0 rgba(136, 8, 8, .75),
+        0.025em 0.05em 0 rgba(57, 255, 20, .75),
+    ;
+} */

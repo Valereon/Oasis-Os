@@ -1,0 +1,14 @@
+body{
+    background-color: #131212;
+    color: #3ffa5b;
+    font-family: "MyFont";
+    font-size: 35px;
+
+}
+
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(Font/Bitwise-m19x.ttf);
+}
+

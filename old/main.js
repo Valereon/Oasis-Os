@@ -1,4 +1,5 @@
 import * as commands from "./commands.js";
+import * as bar from "./progressBar.js";
 
 var prevCommandsCounter = 0;
 var prevCommands = [];
@@ -41,8 +42,16 @@ function execute(e){
                 addEnterListener(commands.moveDownInput());
             }
             else{
-                commands.wrong();
-                addEnterListener(commands.moveDownInput());
+                if(command[0] === "Update.exe"){
+                    commands.createNewText("Updating...");
+                    bar.upload();
+
+                }
+                else
+                {
+                    commands.wrong();
+                    addEnterListener(commands.moveDownInput());
+                }
             }
         }
         else if(key === "ArrowUp"){
