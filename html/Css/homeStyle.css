@@ -12,3 +12,18 @@ body{
     src: url(Font/Bitwise-m19x.ttf);
 }
 
+
+
+.ascii{
+    font-size: 13px;
+    
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /*customize to your needs 100%*/
+    margin-top: 20vh; /*customize to your needs 100%*/
+}
+
