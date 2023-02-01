@@ -19,3 +19,8 @@ function home(){
     window.location.href = "/pages/insideOfHome.html";
 
 }
+
+
+
+
+
