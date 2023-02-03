@@ -27,3 +27,6 @@ body{
     margin-top: 20vh; /*customize to your needs 100%*/
 }
 
+span{
+    display: inline;
+}
